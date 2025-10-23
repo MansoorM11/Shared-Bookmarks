@@ -7,7 +7,6 @@ test("bookmarks are shown in reverse order (newest first)", () => {
 
   const reversed = [...bookmarks].reverse();
 
-  // Verify the order
   expect(reversed[0].title).toBe("Bookmark 3");
   expect(reversed[1].title).toBe("Bookmark 2");
   expect(reversed[2].title).toBe("Bookmark 1");
