@@ -16,5 +16,28 @@
       <option value="option4">User 4</option>
       <option value="option5">User 5</option>
     </select>
+    <form>
+      <h2>Add a bookmark and its description to share with other people</h2>
+
+      <label for="bookmarkUrl">Add bookmark url</label>
+      <input
+        type="text"
+        id="bookmarkUrl"
+        required
+        placeholder="www.example123.com"
+      />
+      <br />
+      <label for="urlTitle">Title for the url webpage</label>
+      <input type="text" required placeholder="Example123" id="urlTitle" />
+      <br />
+      <label for="urlDescription">Describe the webpage</label>
+      <textarea id="urlDescription" name="urlDescription" rows="3" cols="20">
+this example website is about...
+</textarea
+      >
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="displayUserUrl"></div>
   </body>
 </html>
