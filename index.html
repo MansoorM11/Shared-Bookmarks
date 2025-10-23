@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <script type="module" src="script.js"></script>
   </head>
   <body>
@@ -16,10 +19,10 @@
       <option value="option4">User 4</option>
       <option value="option5">User 5</option>
     </select>
-    <form>
+    <form id="form">
       <h2>Add a bookmark and its description to share with other people</h2>
 
-      <label for="bookmarkUrl">Add bookmark url</label>
+      <label for="bookmarkUrl">Add bookmark url</label><br />
       <input
         type="text"
         id="bookmarkUrl"
@@ -27,14 +30,17 @@
         placeholder="www.example123.com"
       />
       <br />
-      <label for="urlTitle">Title for the url webpage</label>
+      <label for="urlTitle">Title for the url webpage</label><br />
       <input type="text" required placeholder="Example123" id="urlTitle" />
       <br />
-      <label for="urlDescription">Describe the webpage</label>
-      <textarea id="urlDescription" name="urlDescription" rows="3" cols="20">
-this example website is about...
-</textarea
-      >
+      <label for="urlDescription">Describe the webpage</label><br />
+      <textarea
+        id="urlDescription"
+        name="urlDescription"
+        rows="3"
+        cols="20"
+        placeholder="this example website is about..."
+      ></textarea>
       <br />
       <button type="submit">Submit</button>
     </form>
